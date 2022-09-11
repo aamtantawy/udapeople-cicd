@@ -61,7 +61,7 @@ commands:
             aws s3 rm s3://udapeople-<<parameters.Workflow_ID>> --recursive
             aws cloudformation delete-stack --stack-name udapeople-frontend-<< parameters.Workflow_ID >>
 
-revert-migrations:
+  revert-migrations:
     description: Revert the last migration, if any were executed during the current workflow
     parameters:
       Workflow_ID:
@@ -230,7 +230,7 @@ jobs:
             - project/.circleci/ansible/inventory.txt
       # Here's where you will add some code to rollback on failure      
       - destroy-environment
-      
+
   configure-infrastructure:
     docker:
       - image: cimg/python:3.10
