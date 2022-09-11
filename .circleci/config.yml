@@ -247,19 +247,6 @@ jobs:
             npm install
             npm audit fix
             npm audit fix --audit-level=critical --force
-            npm audit fix --audit-level=critical
-            npm audit --audit-level=critical
-            npm audit --audit-level=critical
-            npm audit --audit-level=critical
-            npm audit --audit-level=critical
-            npm audit --audit-level=critical
-            npm audit fix --audit-level=critical --force
-            npm audit --audit-level=critical
-            npm audit fix --audit-level=critical --force
-            npm audit fix --audit-level=critical --force
-            npm audit fix --audit-level=critical --force
-            npm audit fix --audit-level=critical --force
-            npm audit fix --audit-level=critical --force
             npm run migrations > migrations_dump.txt
       - run:
           name: Send migration results to memstash
